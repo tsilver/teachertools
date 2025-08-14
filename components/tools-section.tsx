@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, BookOpen, MessageSquare, Tag, Users, Zap, Search, Layers, Lock } from "lucide-react"
+import Link from "next/link"
 
 export function ToolsSection() {
   return (
@@ -47,9 +48,11 @@ export function ToolsSection() {
                   Collections for lesson planning
                 </div>
               </div>
-              <Button className="w-full group-hover:bg-blue-700">
-                Learn More About EduTagger
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Button asChild className="w-full group-hover:bg-blue-700">
+                <Link href="/edutagger">
+                  Learn More About EduTagger
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
             </CardContent>
           </Card>
@@ -85,9 +88,11 @@ export function ToolsSection() {
                   Offline-first, privacy-focused
                 </div>
               </div>
-              <Button className="w-full group-hover:bg-green-700 bg-green-600">
-                Learn More About Discussly
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Button asChild className="w-full group-hover:bg-green-700 bg-green-600">
+                <Link href="/discussly">
+                  Learn More About Discussly
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
             </CardContent>
           </Card>
@@ -123,9 +128,11 @@ export function ToolsSection() {
                   Integrated AI editing
                 </div>
               </div>
-              <Button className="w-full group-hover:bg-purple-700 bg-purple-600">
-                Learn More About CourseWeaver
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Button asChild className="w-full group-hover:bg-purple-700 bg-purple-600">
+                <Link href="/courseweaver">
+                  Learn More About CourseWeaver
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
             </CardContent>
           </Card>
@@ -161,9 +168,11 @@ export function ToolsSection() {
                   Automatic session archival
                 </div>
               </div>
-              <Button className="w-full group-hover:bg-orange-700 bg-orange-600">
-                Learn More About PureWrite
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Button asChild className="w-full group-hover:bg-orange-700 bg-orange-600">
+                <Link href="/purewrite">
+                  Learn More About PureWrite
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
             </CardContent>
           </Card>
